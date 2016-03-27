@@ -8,7 +8,7 @@ PRODUCT_RELEASE_NAME := Ixion_P4
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/cat/b15q/device.mk)
+$(call inherit-product, device/DEXP/Ixion_P4/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Ixion_P4
