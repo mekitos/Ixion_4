@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := b15q
+PRODUCT_RELEASE_NAME := Ixion_P4
 
 # Inherit some common stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
@@ -11,8 +11,8 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/cat/b15q/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := b15q
-PRODUCT_NAME := omni_b15q
-PRODUCT_BRAND := Cat
-PRODUCT_MODEL := b15q
-PRODUCT_MANUFACTURER := Cat
+PRODUCT_DEVICE := Ixion_P4
+PRODUCT_NAME := omni_Ixion_P4
+PRODUCT_BRAND := DEXP
+PRODUCT_MODEL := Ixion_P4
+PRODUCT_MANUFACTURER := DEXP
