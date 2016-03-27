@@ -22,6 +22,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(call match-prefix,b15q,$(underscore),$(PRODUCT_DEVICE)),true)
+ifeq ($(call match-prefix,Ixion_P4,$(underscore),$(PRODUCT_DEVICE)),true)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
