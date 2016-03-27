@@ -1,13 +1,13 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/kazan/b15q/BoardConfigVendor.mk
+-include vendor/DEXP/Ixion_P4/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := b15q
+TARGET_BOOTLOADER_BOARD_NAME := Ixion_P4
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6592
+TARGET_BOARD_PLATFORM := mt6582
 
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
@@ -22,7 +22,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a7
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
-TARGET_BOOTLOADER_BOARD_NAME := b15q
+TARGET_BOOTLOADER_BOARD_NAME := Ixion_P4
 
 BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x80600000
@@ -34,14 +34,14 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 27917287424
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Custom recovery
-TARGET_PREBUILT_KERNEL := device/cat/b15q/kernel
+TARGET_PREBUILT_KERNEL := device/DEXP/Ixion_P4/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # TWRP
 TW_THEME := portrait_mdpi
-TARGET_RECOVERY_INITRC := device/cat/b15q/init.rc
+TARGET_RECOVERY_INITRC := device/DEXP/Ixion_P4/init.rc
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun%d/file
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -53,4 +53,4 @@ TW_MAX_BRIGHTNESS := 255
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 RECOVERY_SDCARD_ON_DATA := true
 
-BOARD_CUSTOM_BOOTIMG_MK := device/cat/b15q/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/DEXP/Ixion_P4/custombootimg.mk
